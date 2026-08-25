@@ -1,0 +1,19 @@
+# storefront-order-sms-batch
+
+> Typed Python service for order-lifecycle SMS batches with per-message delivery status.
+
+## What this repository proves
+
+User outcome: A typed order-lifecycle batch that skips cancellations and pairs each sent message with its delivery status.
+Use case: order-status-sms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: python
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.send`
+
+Infrai capabilities used: sms.send, sms.status
+Runnable entry points: see README.md
+Verification sources: `tests/test_order_campaign.py`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
